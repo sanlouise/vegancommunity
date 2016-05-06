@@ -1,0 +1,17 @@
+.home-bg {
+  background-image: url("salad.jpg"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  /* Set rules to fill background */
+  min-width: 100%;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: 100%;
+	
+  /* Set up positioning */
+  position: fixed;
+}
