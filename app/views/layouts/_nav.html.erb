@@ -5,12 +5,9 @@
     <ul id="dropdown1" class="dropdown-content">
       <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %> </li>
     </ul>
-    
-    
-    
+
     <div class="nav-wrapper indigo darken-4">
-  
-      <a href="/" class="brand-logo center">Veganista</a>
+      <%= link_to(image_tag("logo.png", :alt => "home image", :width => 50, :height => 50, class: "brand-logo center")) %>
       
         <ul class="right hide-on-med-and-down">
           <li><a class="dropdown-button" href="#!" data-activates="dropdown1">
@@ -21,7 +18,7 @@
           <li><%= link_to "Browse Recipes", "recipes" %></li>
           <% if !user_signed_in? %>
             <li><%= link_to "Log In", new_user_session_path %> </li>
-            <li><%= link_to "Sign Up", new_user_registration_path %> </li>
+            <li><%= link_to "Sign Up", new_user_registration_path, class: "waves-effect waves-light btn" %> </li>
           <% end %>
           
         </ul>
