@@ -1,17 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
 .home-bg {
-  background-image: url("salad.jpg"); 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  
+  background-image: url(bowl.png);
   /* Set rules to fill background */
-  min-width: 100%;
+  min-height: 100%;
+  min-width: 1024px;
+  z-index: -1;
 	
   /* Set up proportionate scaling */
   width: 100%;
-  height: 100%;
+  height: auto;
 	
   /* Set up positioning */
   position: fixed;
+  top: 0;
+  left: 0;
 }
+
+
+.dropdown-content {
+  top: 15px;
+}
+
+.header.center.text-lighten-2.home {
+  font-family: Pacifico;
+  margin-top: 30px;
+  font-size: 130px;
+  color: white !important;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important;
+  margin-top: 90px;
+}
+
+.header.col.s12.light{
+  margin-top: 40px;
+  color: white;
+}
+
