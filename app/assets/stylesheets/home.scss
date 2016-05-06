@@ -1,5 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 @import url(https://fonts.googleapis.com/css?family=Gudea);
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans);
+
+p, h1, h2, h3, h4, h5, a {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+p, a, nav, li {
+  font-size: 17px;
+}
 
 .home-bg {
   background-image: url(bowl.png);
@@ -17,7 +26,6 @@
   top: 0;
   left: 0;
 }
-
 
 .dropdown-content {
   top: 15px;
@@ -45,7 +53,7 @@
 }
 
 .header.col.s12.light{
-  font-family: Gudea;
+  font-family: Alegreya Sans;
   font-size: 50px;
   margin-top: 40px;
   margin-bottom: 20px;
@@ -55,5 +63,9 @@
 
 .brand-logo.center {
   margin-top: 7px;
+}
+
+.footer-copyright {
+  font-size: 12px !important;
 }
 
