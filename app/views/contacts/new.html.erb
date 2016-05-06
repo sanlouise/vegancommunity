@@ -1,0 +1,27 @@
+<div class="row">
+  <form class="col s12">
+      <%= form_for @contact do |f| %>
+      
+      <div class="input-field col s12 m8 offset-m2">
+        <%= f.label :name %>
+        <%= f.text_field :name, autofocus: true %>
+      </div>
+      
+      <div class="input-field col s12 m8 offset-m2">
+        <%= f.label :email %><br />
+        <%= f.email_field :email %>
+      </div>
+      
+      <div class="input-field col s12 m8 offset-m2">
+        <%= f.label :comments %>
+        <%= f.text_area :comments, class: 'form-control' %>
+       </div>
+       
+        <div class="actions col s12 m8 offset-m2">
+          <button class="btn waves-effect waves-light" type="submit" name="action">Send
+          </button>
+        </div>
+          
+      <% end %>
+  </form>
+</div>
