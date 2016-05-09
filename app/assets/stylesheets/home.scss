@@ -11,11 +11,12 @@ p, a, nav, li {
 }
 
 .home-bg {
-  background-image: url(bowl.png);
+  background-image: url(queengreen.jpg);
   /* Set rules to fill background */
   min-height: 100%;
   min-width: 1024px;
   z-index: -1;
+  background-size:cover;
 	
   /* Set up proportionate scaling */
   width: 100%;

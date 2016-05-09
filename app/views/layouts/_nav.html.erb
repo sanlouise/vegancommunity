@@ -15,7 +15,8 @@
             <li>Signed in as <%= "#{current_user.first_name}" %> </li>
           <% end %></a></li>
           
-          <li><%= link_to "Browse Recipes", mealtype_path %></li>
+          <li><%= link_to "Recipes", mealtype_path %></li>
+          <li><%= link_to "Cosmetics", "#" %></li>
           <% if !user_signed_in? %>
             <li><%= link_to "Log In", new_user_session_path %> </li>
             <li><%= link_to "Sign Up", new_user_registration_path, class: "waves-effect waves-light btn" %> </li>
