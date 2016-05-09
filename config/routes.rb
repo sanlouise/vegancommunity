@@ -9,4 +9,9 @@ Rails.application.routes.draw do
   get '/about', to: 'pages#about' 
   get '/blog', to: 'pages#blog'
   
+  get '/breakfast', to: 'meals#breakfast'
+  get '/lunch', to: 'meals#lunch'
+  get '/dinner', to: 'meals#dinner'
+  get '/mealtype', to: 'meals#choose_meal'
+  
 end

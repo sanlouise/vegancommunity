@@ -2,12 +2,6 @@
 
 <h1>All Recipes</h1>
 
-<%= link_to "Breakfast", "#", class: "waves-effect waves-light btn" %>
-<%= link_to "Lunch", "#", class: "waves-effect waves-light btn" %>
-<%= link_to "Dinner", "#", class: "waves-effect waves-light btn" %>
-<%= link_to "Snacks", "#", class: "waves-effect waves-light btn" %>
-<%= link_to "Soups", "#", class: "waves-effect waves-light btn" %>
-
 <% @recipes.sort_by{|item| item.created_at}.reverse.each do |recipe| %>
   <div class="row">
     <div class="col s12 m4">
