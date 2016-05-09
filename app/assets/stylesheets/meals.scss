@@ -15,3 +15,33 @@
   top: 0;
   left: 0;
 }
+
+.wrapper {
+    position: relative;
+    padding: 0;
+    width:100px;
+    display:block;
+}
+.text-image {
+    position: absolute;
+    top: 0;
+    color:#f00;
+    background-color:rgba(255,255,255,0.8);
+    width: 250px;
+    height: 250px;
+    line-height:100px;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.text:hover {
+    opacity:1 !important;
+}
+
+img {
+    z-index:1 !important;
+}
