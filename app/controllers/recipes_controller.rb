@@ -25,6 +25,7 @@ class RecipesController < ApplicationController
   # POST /recipes.json
   def create
     @recipe = Recipe.new(recipe_params)
+    @recipe.user_id = session["warden.user.user.key"][1][0]
 
     respond_to do |format|
       if @recipe.save
