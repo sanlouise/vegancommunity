@@ -1,11 +1,13 @@
 <div class ="meals-bg"></div>
 
+<h1 id="meals-title">Recipes</h1>
+
 <div class="row">
   <div class="col s12 m8 offset-m2 center">
 
     <%= link_to "Display All Recipes", recipes_path, class: "waves-effect waves-light btn" %>
     
-    <p>or search by meal</p>
+    <p id="meal-p">or search by meal</p>
     
     <%= link_to "Breakfast", breakfast_path, class: "waves-effect waves-light btn" %>
     <%= link_to "Lunch", lunch_path, class: "waves-effect waves-light btn" %>
@@ -17,8 +19,25 @@
   </div>
 </div>
 
+
 <%= image_tag("meals/meals_breakfast.png", size: "250x250", class: "meal-image") %>
-<%= image_tag("meals/meals_breakfast.png", size: "250x250") %>
-<%= image_tag("meals/meals_breakfast.png", size: "250x250") %>
-<%= image_tag("meals/meals_breakfast.png", size: "250x250") %>
-<%= image_tag("meals/meals_breakfast.png", size: "250x250") %>
+<%= image_tag("meals/meals_breakfast.png", size: "250x250", class: "meal-image") %>
+<%= image_tag("meals/meals_breakfast.png", size: "250x250", class: "meal-image") %>
+<%= image_tag("meals/meals_breakfast.png", size: "250x250", class: "meal-image") %>
+<%= image_tag("bowl.png", size: "250x250", class:"meal-image") %>
+<%= image_tag("meals/meals_breakfast.png", size: "250x250", class: "meal-image") %>
+
+<div class="row">
+  <div class="col s12 m8 offset-m2 center">
+    <div id="meal-cards">
+      <div class="content">
+          <%= image_tag("meals/meals_breakfast.png", size: "250x250", class: "meal-image") %>
+          <a href="/breakfast">Breakfast</a>
+      </div>
+      <div class="content">
+          <%= image_tag("meals/meals_lunch.png", size: "250x250", class: "meal-image") %> 
+          <a href="/lunch">Lunch</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -4636,7 +4636,7 @@ small {
   text-transform: uppercase;
 }
 
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover {
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating): {
   color: #ffd8a6;
 }
 
@@ -4791,7 +4791,7 @@ small {
   transition: color .28s ease;
 }
 
-.tabs .tab a:hover {
+.tabs .tab a: {
   color: #f9c9cb;
 }
 
@@ -4878,12 +4878,12 @@ small {
   pointer-events: none;
 }
 
-.btn.disabled:hover, .disabled.btn-large:hover,
-.btn-floating.disabled:hover,
-.btn-large.disabled:hover,
+.btn.disabled:, .disabled.btn-large:,
+.btn-floating.disabled:,
+.btn-large.disabled:,
 .btn:disabled
-.btn-large:disabled:hover, .btn-large:disabled .btn-large:disabled:hover,
-.btn-floating:disabled:hover {
+.btn-large:disabled:, .btn-large:disabled .btn-large:disabled:,
+.btn-floating:disabled: {
   background-color: #DFDFDF !important;
   color: #9F9F9F !important;
 }
@@ -4906,7 +4906,7 @@ small {
   cursor: pointer;
 }
 
-.btn:hover, .btn-large:hover {
+.btn:, .btn-large: {
   background-color: #2bbbad;
 }
 
@@ -4936,7 +4936,7 @@ small {
   line-height: 37px;
 }
 
-.btn-floating:hover {
+.btn-floating: {
   background-color: #26a69a;
 }
 
@@ -5058,7 +5058,7 @@ button.btn-floating {
   text-transform: none;
 }
 
-.dropdown-content li:hover, .dropdown-content li.active, .dropdown-content li.selected {
+.dropdown-content li:, .dropdown-content li.active, .dropdown-content li.selected {
   background-color: #eee;
 }
 

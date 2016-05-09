@@ -5,6 +5,7 @@
   min-width: 1024px;
   z-index: -1;
   background-size:cover;
+  opacity: 0.8;
 	
   /* Set up proportionate scaling */
   width: 100%;
@@ -16,32 +17,46 @@
   left: 0;
 }
 
-.wrapper {
-    position: relative;
-    padding: 0;
-    width:100px;
-    display:block;
-}
-.text-image {
-    position: absolute;
-    top: 0;
-    color:#f00;
-    background-color:rgba(255,255,255,0.8);
-    width: 250px;
-    height: 250px;
-    line-height:100px;
-    text-align: center;
-    z-index: 10;
-    opacity: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-.text:hover {
-    opacity:1 !important;
+#meal-p {
+  font-family: Alegreya Sans;
+  font-size: 50px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: white;
 }
 
-img {
-    z-index:1 !important;
+#meals-title {
+  font-family: Pacifico;
+  margin-top: 30px;
+  font-size: 130px;
+  color: white !important;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important;
+  margin-top: 60px;
+  padding-bottom: 40px;
+}
+
+
+#meal-cards{
+
+    margin-left: 20px;
+    margin-top: 13px;
+}
+
+#meal-cards .content{
+    width: 182px; /*328 co je 1/3 - 20margin left*/
+    height: 121px;
+    line-height: 20px;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position:relative;
+}
+
+#meal-cards .content a {
+    position:absolute;
+    font-size: 30px;
+    bottom:5px;
+    right:5px;
+    background: none !important;
+    color:#FFF;
 }
