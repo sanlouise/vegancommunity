@@ -5515,7 +5515,7 @@ input[type=tel],
 input[type=number],
 input[type=search],
 textarea.materialize-textarea {
-  background-color: transparent;
+  background-color: white;
   border: none;
   border-bottom: 1px solid #9e9e9e;
   border-radius: 0;
@@ -6341,16 +6341,18 @@ select {
 }
 
 .select-wrapper input.select-dropdown {
+  font-family: 'Alegreya Sans', sans-serif;
+  text-align: center;
   position: relative;
   cursor: pointer;
-  background-color: transparent;
+  background-color: white;
   border: none;
   border-bottom: 1px solid #9e9e9e;
   outline: none;
   height: 3rem;
   line-height: 3rem;
   width: 100%;
-  font-size: 1rem;
+  font-size: 18px;
   margin: 0 0 15px 0;
   padding: 0;
   display: block;

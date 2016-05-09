@@ -5,9 +5,9 @@
 <div class="row">
   <div class="col s12 m8 offset-m2 center">
 
-    <%= link_to "Display All Recipes", recipes_path, class: "waves-effect waves-light btn" %>
+    <%= link_to "Display All Recipes", recipes_path, class: "waves-effect waves-light btn-large" %>
     
-    <p id="meal-p">or search by meal</p>
+    <p id="meal-p">Search By Meal</p>
     
     <%= link_to "Breakfast", breakfast_path, class: "waves-effect waves-light btn" %>
     <%= link_to "Lunch", lunch_path, class: "waves-effect waves-light btn" %>
@@ -15,29 +15,36 @@
     <%= link_to "Soups", "#", class: "waves-effect waves-light btn" %>
     <%= link_to "Salads", "#", class: "waves-effect waves-light btn" %>
     <%= link_to "Snacks", "#", class: "waves-effect waves-light btn" %>
-
+    
   </div>
 </div>
 
 
-<%= image_tag("meals/meals_breakfast.png", size: "250x250", class: "meal-image") %>
-<%= image_tag("meals/meals_breakfast.png", size: "250x250", class: "meal-image") %>
-<%= image_tag("meals/meals_breakfast.png", size: "250x250", class: "meal-image") %>
-<%= image_tag("meals/meals_breakfast.png", size: "250x250", class: "meal-image") %>
-<%= image_tag("bowl.png", size: "250x250", class:"meal-image") %>
-<%= image_tag("meals/meals_breakfast.png", size: "250x250", class: "meal-image") %>
-
+<p id="meal-p">Search By Ingredients</p>
 <div class="row">
-  <div class="col s12 m8 offset-m2 center">
-    <div id="meal-cards">
-      <div class="content">
-          <%= image_tag("meals/meals_breakfast.png", size: "250x250", class: "meal-image") %>
-          <a href="/breakfast">Breakfast</a>
-      </div>
-      <div class="content">
-          <%= image_tag("meals/meals_lunch.png", size: "250x250", class: "meal-image") %> 
-          <a href="/lunch">Lunch</a>
-      </div>
-    </div>
+  <div class="input-field col s12 m4 offset-m4 center">
+    <select multiple>
+      <option value="" disabled selected>Choose Ingredients</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
   </div>
 </div>
+
+<hr/>
+<p id="meal-p">Just Added</p>
+
+
+<%= image_tag("meals/meals_breakfast.png", size: "250x250", class: "meal-image") %>
+<%= image_tag("meals/meals_lunch.png", size: "250x250", class: "meal-image") %>
+<%= image_tag("meals/meals_breakfast.png", size: "250x250", class: "meal-image") %>
+<%= image_tag("meals/meals_breakfast.png", size: "250x250", class: "meal-image") %>
+<%= image_tag("meals/meals_breakfast.png", size: "250x250", class: "meal-image") %>
+<%= image_tag("meals/meals_breakfast.png", size: "250x250", class: "meal-image") %>
+<%= image_tag("salad.jpg", size: "250x250", class: "meal-image") %>
+<%= image_tag("bowl.png", size: "250x250", class: "meal-image") %>
+
+
+
+
