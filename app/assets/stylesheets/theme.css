@@ -1,5 +1,5 @@
 .effects {
-  padding-left: 15px;
+  padding-left: 0px;
 }
 .effects .img {
   position: relative;
@@ -12,7 +12,7 @@
   margin-right: 5px;
 }
 .effects .img:first-child {
-  margin-left: -15px;
+  margin-left: 0px;
 }
 .effects .img:last-child {
   margin-right: 0;
@@ -77,11 +77,11 @@ a.expand {
 }
 #effect-1 .overlay a.expand {
   left: 0;
-  text-align: center;
+  text-align: center !important;
   margin: auto auto;
 }
 #effect-1 .img.hover .overlay {
-  height: 100%;
+  height: 50%;
 }
 
 
