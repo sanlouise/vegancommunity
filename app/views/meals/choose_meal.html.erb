@@ -3,7 +3,7 @@
 <h1 id="meals-title">Recipes</h1>
 
 <div class="row">
-  <div class="col s12 m8 offset-m2 center">
+  <div class="col s12 m10 offset-m2 center">
 
     <%= link_to "Display All Recipes", recipes_path, class: "waves-effect waves-light btn-large" %>
     
@@ -45,6 +45,20 @@
 <%= image_tag("salad.jpg", size: "250x250", class: "meal-image") %>
 <%= image_tag("bowl.png", size: "250x250", class: "meal-image") %>
 
-
+<div class="canvas fade_in">
+  <ul id="products" class="">
+    
+    <li id="breakfast" class="product">
+      <a href="/breakfast" title="BREAKFAST">
+        <div class="product_header">
+          <h2>BREAKFAST</h2>
+        </div>
+        <div class="product_thumb">
+          <%= image_tag("meals/meals_breakfast.png", size: "250x250", class: "meal-image") %>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
 
 
