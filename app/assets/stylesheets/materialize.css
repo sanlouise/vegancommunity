@@ -2973,15 +2973,15 @@ ul.staggered-list li {
 }
 
 footer.page-footer {
-  margin-top: 10px;
-  padding-top: 10px;
+  margin-top: 20px;
+  padding-top: 20px;
   background-color: #ee6e73;
 }
 
 footer.page-footer .footer-copyright {
   overflow: hidden;
-  height: 40px;
-  line-height: 40px;
+  height: 50px;
+  line-height: 50px;
   color: rgba(255, 255, 255, 0.8);
   background-color: rgba(51, 51, 51, 0.08);
 }
@@ -4636,7 +4636,7 @@ small {
   text-transform: uppercase;
 }
 
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating): {
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover {
   color: #ffd8a6;
 }
 
@@ -4791,7 +4791,7 @@ small {
   transition: color .28s ease;
 }
 
-.tabs .tab a: {
+.tabs .tab a:hover {
   color: #f9c9cb;
 }
 
@@ -4869,12 +4869,21 @@ small {
   cursor: default;
 }
 
-.btn.disabled:, .disabled.btn-large:,
-.btn-floating.disabled:,
-.btn-large.disabled:,
+.btn.disabled *, .disabled.btn-large *,
+.btn-floating.disabled *,
+.btn-large.disabled *,
 .btn:disabled
-.btn-large:disabled:, .btn-large:disabled .btn-large:disabled:,
-.btn-floating:disabled: {
+.btn-large:disabled *, .btn-large:disabled .btn-large:disabled *,
+.btn-floating:disabled * {
+  pointer-events: none;
+}
+
+.btn.disabled:hover, .disabled.btn-large:hover,
+.btn-floating.disabled:hover,
+.btn-large.disabled:hover,
+.btn:disabled
+.btn-large:disabled:hover, .btn-large:disabled .btn-large:disabled:hover,
+.btn-floating:disabled:hover {
   background-color: #DFDFDF !important;
   color: #9F9F9F !important;
 }
@@ -4897,7 +4906,7 @@ small {
   cursor: pointer;
 }
 
-.btn:, .btn-large: {
+.btn:hover, .btn-large:hover {
   background-color: #2bbbad;
 }
 
@@ -4927,7 +4936,7 @@ small {
   line-height: 37px;
 }
 
-.btn-floating: {
+.btn-floating:hover {
   background-color: #26a69a;
 }
 
@@ -5049,7 +5058,7 @@ button.btn-floating {
   text-transform: none;
 }
 
-.dropdown-content li:, .dropdown-content li.active, .dropdown-content li.selected {
+.dropdown-content li:hover, .dropdown-content li.active, .dropdown-content li.selected {
   background-color: #eee;
 }
 
@@ -5506,7 +5515,7 @@ input[type=tel],
 input[type=number],
 input[type=search],
 textarea.materialize-textarea {
-  background-color: white;
+  background-color: transparent;
   border: none;
   border-bottom: 1px solid #9e9e9e;
   border-radius: 0;
@@ -6332,18 +6341,16 @@ select {
 }
 
 .select-wrapper input.select-dropdown {
-  font-family: 'Alegreya Sans', sans-serif;
-  text-align: center;
   position: relative;
   cursor: pointer;
-  background-color: white;
+  background-color: transparent;
   border: none;
   border-bottom: 1px solid #9e9e9e;
   outline: none;
   height: 3rem;
   line-height: 3rem;
   width: 100%;
-  font-size: 18px;
+  font-size: 1rem;
   margin: 0 0 15px 0;
   padding: 0;
   display: block;
