@@ -6343,7 +6343,7 @@ select {
 .select-wrapper input.select-dropdown {
   position: relative;
   cursor: pointer;
-  background-color: transparent;
+  background-color: white;
   border: none;
   border-bottom: 1px solid #9e9e9e;
   outline: none;
