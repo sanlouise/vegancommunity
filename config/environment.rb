@@ -13,3 +13,8 @@ ActionMailer::Base.smtp_settings = {
   :domain => 'heroku.com',
   :enable_startstls_auto => true
 }
+
+# Load the Rails application.
+require File.expand_path('../application', __FILE__)
+
+require 'carrierwave/orm/activerecord'
