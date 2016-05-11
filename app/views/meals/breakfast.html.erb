@@ -1,48 +1,40 @@
-    <div id="effect-1" class="effects clearfix">
-      <div class="img">
-        <%= image_tag("meals/meals_dinner.png", class: "meal-image") %>
-        <div class="overlay">
-          <a href="#" class="expand">Breakfast</a>
-          <a class="close-overlay hidden">Breakfast</a>
+<p id="notice"><%= notice %></p>
+
+<h1>Breakfast</h1>
+
+<div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s3"><%= link_to "All Recipes", recipes_path %></li>
+        <li class="tab col s3"><%= link_to "Breakfast", breakfast_path %></li>
+        <li class="tab col s3"><%= link_to "Lunch", lunch_path %></li>
+        <li class="tab col s3"><%= link_to "Dinner", dinner_path %></li>
+      </ul>
+  </div>
+</div>
+
+<%= link_to "New Recipe", "new_recipe_path", class: "waves-effect waves-light btn" %>
+
+<div class="row">
+  <div class="m8 offset-m2 s12">
+    <% if @recipes.meal_type == "Breakfast" do |recipe| %>
+      <div class="col-m3">
+        <div id="effect-1" class="effects clearfix">
+          <div class="img">
+            
+            <%= link_to recipe_path(recipe) do %>
+            <%= image_tag(recipe.image.url, size: "350x350") %>
+              <div class="recipes-overlay">
+                <a href="#" class="expand">
+                  <div class="center">
+                    <%= recipe.title %></a>
+                  </div>
+                <a class="close-recipes-overlay hidden"></a>
+              </div>
+            </div>
+          <% end %>
         </div>
-      </div>
-      
-      <div class="img">
-        <%= image_tag("meals/meals_dinner.png", class: "meal-image") %>
-        <div class="overlay">
-            <a href="#" class="expand">Lunch</a>
-            <a class="close-overlay hidden"></a>
-        </div>
-      </div>
-      
-      <div class="img">
-        <%= image_tag("meals/meals_dinner.png", class: "meal-image") %>
-        <div class="overlay">
-            <a href="#" class="expand">Dinner</a>
-            <a class="close-overlay hidden"></a>
-        </div>
-      </div>
-      
-      <div class="img">
-        <%= image_tag("meals/meals_dinner.png", class: "meal-image") %>
-        <div class="overlay">
-            <a href="#" class="expand">+</a>
-            <a class="close-overlay hidden">Breakfast</a>
-        </div>
-      </div>
-      
-      <div class="img">
-        <%= image_tag("meals/meals_dinner.png", class: "meal-image") %>
-        <div class="overlay">
-            <a href="#" class="expand">+</a>
-            <a class="close-overlay hidden">Breakfast</a>
-        </div>
-      </div>
-      
-      <div class="img">
-        <%= image_tag("meals/meals_dinner.png", class: "meal-image") %>
-        <div class="overlay">
-            <a href="#" class="expand">+</a>
-            <a class="close-overlay hidden">Breakfast</a>
-        </div>
-      </div>
+      </div>  
+    <% end %>
+  </div>
+</div>
