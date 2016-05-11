@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 @import url(https://fonts.googleapis.com/css?family=Gudea);
-@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,600);
 
 p, h1, h2, h3, h4, h5, a {
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Josefin Slab', serif;
 }
 
 p, a, nav, li {
@@ -11,7 +11,7 @@ p, a, nav, li {
 }
 
 .home-bg {
-  background-image: url(queengreen.jpg);
+  background-image: url(bg-field-home.jpg);
   /* Set rules to fill background */
   min-height: 100%;
   min-width: 1024px;
@@ -34,11 +34,11 @@ p, a, nav, li {
 
 .header.center.text-lighten-2.home {
   font-family: Pacifico;
-  margin-top: 30px;
+  margin-bottom: 30px;
   font-size: 130px;
   color: white !important;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important;
-  margin-top: 90px;
+  margin-top: 140px;
 }
 
 @media only screen and (max-width:800px){
@@ -54,10 +54,10 @@ p, a, nav, li {
 }
 
 .header.col.s12.light{
-  font-family: Alegreya Sans;
+  font-family: Pacifico;
   font-size: 50px;
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important;
 }

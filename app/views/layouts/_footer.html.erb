@@ -1,25 +1,15 @@
 
 <footer class="page-footer">
-  <div class="container">
-    <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">Conscioux</h5>
-        <p class="grey-text text-lighten-4">Our mission is to help people live a 
-        healthy lifestyle while minimizing their environmental impact. For the love of our planet!</p>
-      </div>
-      <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Links</h5>
-        <ul>
-          <li><%= link_to "About", "/about" %></li>
-          <li><%= link_to "Blog", "/blog" %></li>
-          <li><%= link_to "Contact", new_contact_path %></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  
+  
   <div class="footer-copyright">
-    <div class="container center down">
-    © 2016 Developed by Sandra Hallie
+    <div class="container center">
+        © 2016 Developed by Sandra Hallie
+      <a class="grey-text text-lighten-4 right">
+        <%= link_to "About", "/about" %></li>
+        <%= link_to "Blog", "/blog" %></li>
+        <%= link_to "Contact", new_contact_path %></li>
+      </a>
     </div>
   </div>
 </footer>

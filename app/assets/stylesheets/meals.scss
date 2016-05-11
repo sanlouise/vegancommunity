@@ -1,5 +1,5 @@
 .meals-bg {
-  background-image: url(bowl.png);
+  background-image: none;
   /* Set rules to fill background */
   min-height: 100%;
   min-width: 1024px;
@@ -18,11 +18,11 @@
 }
 
 #meal-p {
-  font-family: Alegreya Sans;
+  font-family: 'Josefin Slab', serif;
   font-size: 50px;
   margin-top: 40px;
   margin-bottom: 20px;
-  color: white;
+  color: black;
 }
 
 .meal-image {
