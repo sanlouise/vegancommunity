@@ -2,9 +2,10 @@
   <div class="row">
     <div class="col s12 m8 offset-m2">
       
-      <div class="input-field">
-        <%= f.label :meal_type %><br>
-        <%= f.text_field :meal_type %>
+      <div class="input-field collection_check_boxes">
+        <%= f.fields_for :meal do |meal| %>
+          <%= meal.collection_check_boxes :meal_ids, @meals, :id, :name %>
+        <% end %>
       </div>
     
       <div class="input-field">
