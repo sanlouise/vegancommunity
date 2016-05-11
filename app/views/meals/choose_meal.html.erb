@@ -1,89 +1,46 @@
 <div class ="meals-bg"></div>
 
-<h1 id="meals-title">Recipes</h1>
-
-<div class="row">
-  <div class="col s12 m8 center">
-    <p id="meal-p">Search By Meal</p>
-    <div id="effect-1" class="effects clearfix">
-      <div class="img">
-        <%= image_tag("meals/meals_dinner.png", class: "meal-image") %>
-        <div class="overlay">
-          <a href="#" class="expand">Breakfast</a>
-          <a class="close-overlay hidden">Breakfast</a>
-        </div>
-      </div>
-      
-      <div class="img">
-        <%= image_tag("meals/meals_dinner.png", class: "meal-image") %>
-        <div class="overlay">
-            <a href="#" class="expand">Lunch</a>
-            <a class="close-overlay hidden"></a>
-        </div>
-      </div>
-      
-      <div class="img">
-        <%= image_tag("meals/meals_dinner.png", class: "meal-image") %>
-        <div class="overlay">
-            <a href="#" class="expand">Dinner</a>
-            <a class="close-overlay hidden"></a>
-        </div>
-      </div>
-      
-      <div class="img">
-        <%= image_tag("meals/meals_dinner.png", class: "meal-image") %>
-        <div class="overlay">
-            <a href="#" class="expand">+</a>
-            <a class="close-overlay hidden">Breakfast</a>
-        </div>
-      </div>
-      
-      <div class="img">
-        <%= image_tag("meals/meals_dinner.png", class: "meal-image") %>
-        <div class="overlay">
-            <a href="#" class="expand">+</a>
-            <a class="close-overlay hidden">Breakfast</a>
-        </div>
-      </div>
-      
-      <div class="img">
-        <%= image_tag("meals/meals_dinner.png", class: "meal-image") %>
-        <div class="overlay">
-            <a href="#" class="expand">+</a>
-            <a class="close-overlay hidden">Breakfast</a>
-        </div>
-      </div>
+<div class="white-background">
+  <h1 id="meals-title">Recipes</h1>
+  
+  <div class="row">
+    <div class="col s12 m8 offset-m2 center">
+      <p id="meal-p">Search By Meal</p>
+      <%= link_to "Breakfast", breakfast_path, class: "waves-effect waves-light btn" %>
+      <%= link_to "Lunch", lunch_path, class: "waves-effect waves-light btn" %>
+      <%= link_to "Dinner", dinner_path, class: "waves-effect waves-light btn" %>
+      <%= link_to "Soups", "#", class: "waves-effect waves-light btn" %>
+      <%= link_to "Salads", "#", class: "waves-effect waves-light btn" %>
+      <%= link_to "Snacks", "#", class: "waves-effect waves-light btn" %>
+    </div>
   </div>
-</div>
-    
-    
-    
-<!--    < link_to "Breakfast", breakfast_path, class: "waves-effect waves-light btn" %>-->
-<!--    <= link_to "Lunch", lunch_path, class: "waves-effect waves-light btn" %>-->
-<!--    <= link_to "Dinner", dinner_path, class: "waves-effect waves-light btn" %>-->
-<!--    <= link_to "Soups", "#", class: "waves-effect waves-light btn" %>-->
-<!--    <= link_to "Salads", "#", class: "waves-effect waves-light btn" %>-->
-<!--    <= link_to "Snacks", "#", class: "waves-effect waves-light btn" %>-->
-    
-<!--  </div>-->
-<!--</div>-->
-
-<div class="row">
-  <div class="col s12 m4">
-    <p id="meal-p">Search By Ingredients</p>
-    <div class="row">
-      <div class="input-field col s12 m8 offset-m2 center">
-        <select multiple>
-          <option value="" disabled selected>Choose Ingredients</option>
-          <option value="1">Option 1</option>
-          <option value="2">Option 2</option>
-          <option value="3">Option 3</option>
-        </select>
+  
+  <hr/>
+  
+  <div class="row">
+    <div class="col s12 m8 offset-m2 center">
+      <p id="meal-p">Search By Ingredients</p>
+      <div class="row">
+        <div class="input-field col s12 m8 offset-m2 center">
+          <select multiple>
+            <option value="" disabled selected>Choose Ingredients</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+        </div>
       </div>
     </div>
-
-  <p id="meal-p">Just Browsing?</p>
-  <%= link_to "View All Recipes", recipes_path, class: "waves-effect waves-light btn-large" %>
-  <!--< image_tag("meals/meals_breakfast.png", size: "250x250", class: "meal-image") %>-->
+  </div>
+  
+  
+  <hr/>
+  
+  <div class="row">
+    <div class="col s12 m8 offset-m2 center">
+    <p id="meal-p">Just Browsing?</p>
+    <%= link_to "View All Recipes", recipes_path, class: "waves-effect waves-light btn-large" %>
+    <!--< image_tag("meals/meals_breakfast.png", size: "250x250", class: "meal-image") %>-->
+    </div>
   </div>
 </div>

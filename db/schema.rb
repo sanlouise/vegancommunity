@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160508175024) do
+ActiveRecord::Schema.define(version: 20160510143423) do
 
   create_table "comments", force: :cascade do |t|
     t.integer  "recipe_id",  null: false
@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 20160508175024) do
     t.integer  "total_ecofriendliness"
     t.datetime "created_at",            null: false
     t.datetime "updated_at",            null: false
+    t.string   "quantity_by_weight"
   end
 
   create_table "recipes", force: :cascade do |t|

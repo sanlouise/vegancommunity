@@ -11,15 +11,15 @@
 
 <header>
 </header>
-
-<main>
-  <%= render 'layouts/nav' %>
-  <div class="container center">
-    <%= render 'layouts/notices' %>
-    <%= yield %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  </div>
-</main>
-
+<body>
+  <main>
+    <%= render 'layouts/nav' %>
+    <div class="container center">
+      <%= render 'layouts/notices' %>
+      <%= yield %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    </div>
+  </main>
 <%= render 'layouts/footer' %>
+</body>
 </html>

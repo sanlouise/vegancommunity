@@ -1,22 +1,11 @@
-// .meal-image {
-//     margin-right: 20px;
-//     margin-left: 20px;
-// }
-
-// .meal-image:hover {
-//     opacity: 0.8;
-//     border: 4px solid #009688;
-//     border-radius: 10px;
-// }
-
 
 a {
     text-decoration: none !important;
 }
 
-// a:hover {
-//     color: #33cc33;
-// }
+a:hover {
+    color: white;
+}
 
 .actions.col.s12.m8.offset-m2 {
     margin-top: 30px;
@@ -36,7 +25,6 @@ a {
     color: white !important;
 }
 
-
 .logo-image {
     max-height: 50px;
     max-width: 50px;
@@ -52,4 +40,12 @@ a {
 
 h5.white-text.ul.li {
     color: green !important;
+}
+
+//Icons in the footer
+.fa {
+    color: white !important;
+    margin-right: 10px;
+    margin-left: 10px;
+    size: 150%;
 }

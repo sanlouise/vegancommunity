@@ -1,10 +1,8 @@
 class RecipesController < ApplicationController
-  before_action :set_recipe, only: [:show, :edit, :update, :destroy]
-
-  # GET /recipes
-  # GET /recipes.json
+  before_action :set_recipe, only: [:edit, :update, :show]
+  
   def index
-    @recipes = Recipe.all
+    @recipes = Recipe.paginate(page: params[:page], per_page: 12)
   end
 
   # GET /recipes/1
