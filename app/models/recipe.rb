@@ -5,6 +5,7 @@ class Recipe < ActiveRecord::Base
   has_many :recipe_ingredients
   has_many :comments
   mount_uploader :image, ImageUploader
+  validate :image_size
   
   private
   def image_size

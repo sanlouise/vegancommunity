@@ -2,111 +2,30 @@
 
 <h1>All Recipes</h1>
 
-<!--< @recipes.sort_by{|item| item.created_at}.reverse.each do |recipe| %>-->
-<!--  <div class="row">-->
-<!--    <div class="col s12 m8 offset-m2">-->
-<!--      <div class="card white-text center">-->
-        <!--Image-->
-<!--        <div class="card-image waves-effect waves-block waves-light">-->
-<!--          <= link_to image_tag(recipe.image), recipe_path(recipe) if recipe.image %>-->
-<!--        </div>-->
-<!--        <div class="card-content white-text center">-->
-<!--          <span class="card-title">-->
-            <!--Title-->
-<!--            <= link_to recipe.title, recipe_path(recipe) %>-->
-<!--          </span>-->
-          <!--Meal Type-->
-<!--          <p>%= link_to recipe.meal_type, recipe_path(recipe) %></p>-->
-<!--        </div>-->
-<!--      </div>-->
-      
-<!--      
-<!--    </div>-->
-<!--  </div>-->
-<!--< end %>-->
-
 <%= link_to "New Recipe", "new_recipe_path", class: "waves-effect waves-light btn" %>
 
-
-<!--<div class="row">-->
-<!--  <div class="col s12 m8 offset-m2">-->
-<!--    <p id="meal-p">Search By Meal</p>-->
-<!--    <div id="effect-1" class="effects clearfix">-->
-<!--      <div class="img">-->
-<!--        < image_tag("meals/meals_dinner.png", class: "meal-image") %>-->
-<!--        <div class="recipes-overlay">-->
-<!--          <a href="#" class="expand">Breakfast</a>-->
-<!--          <a class="close-recipes-overlay hidden">Breakfast</a>-->
-<!--        </div>-->
-<!--      </div>-->
-      
-<!--      <div class="img">-->
-<!--        <= image_tag("meals/meals_dinner.png", class: "meal-image") %>-->
-<!--        <div class="recipes-overlay">-->
-<!--            <a href="#" class="expand">Lunch</a>-->
-<!--            <a class="close-recipes-overlay hidden"></a>-->
-<!--        </div>-->
-<!--      </div>-->
-      
-<!--      <div class="img">-->
-<!--        <= image_tag("meals/meals_dinner.png", class: "meal-image") %>-->
-<!--        <div class="recipes-overlay">-->
-<!--            <a href="#" class="expand">Dinner</a>-->
-<!--            <a class="close-recipes-overlay hidden"></a>-->
-<!--        </div>-->
-<!--      </div>-->
-      
-<!--      <div class="img">-->
-<!--        <= image_tag("meals/meals_dinner.png", class: "meal-image") %>-->
-<!--        <div class="recipes-overlay">-->
-<!--            <a href="#" class="expand">+</a>-->
-<!--            <a class="close-recipes-overlay hidden">Breakfast</a>-->
-<!--        </div>-->
-<!--      </div>-->
-      
-<!--      <div class="img">-->
-<!--        <= image_tag("meals/meals_dinner.png", class: "meal-image") %>-->
-<!--        <div class="recipes-overlay">-->
-<!--            <a href="#" class="expand">+</a>-->
-<!--            <a class="close-recipes-overlay hidden">Breakfast</a>-->
-<!--        </div>-->
-<!--      </div>-->
-      
-<!--      <div class="img">-->
-<!--        <= image_tag("meals/meals_dinner.png", class: "meal-image") %>-->
-<!--        <div class="recipes-overlay">-->
-<!--            <a href="#" class="expand">+</a>-->
-<!--            <a class="close-recipes-overlay hidden">Breakfast</a>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--  </div>-->
-<!--</div>-->
-
-<% @recipes.each do |recipe| %>
-  <div class="row">
-
-    <div class="col-md-4">
-      <%= image_tag(recipe.image.url, size: "300x175") if recipe.image? %>
-    </div>
-
-    <div class="col-lg-6 well"> 
-      <h3><%= link_to recipe.title, recipe_path(recipe) %> </h3>
-        <h4><%= recipe.description %></h4>
-
-          <p>Meal: <%= recipe.meal_type %></p>
+<div class="row">
+  <div class="m8 offset-m2 s12">
+    <% @recipes.each do |recipe| %>
+         <div class="col-m3">
         
-        <!--< if recipe.ingredients.any? %>-->
-        <!--<p>Ingredients: <= render recipe.ingredients %></p>-->
-        <!-- < end %>-->
-      <p>
-        <span class="quiet">
-          <small>
-            Created about <%= time_ago_in_words(recipe.created_at) %> ago.
-          </small>
-        </span>
-    </div>
-    
-  </div>  
-  <hr/>
-<% end %>
-
+          <div id="effect-1" class="effects clearfix">
+            <div class="img">
+              
+              <%= link_to recipe_path(recipe) do %>
+              <%= image_tag(recipe.image.url, size: "350x350") %>
+              <div class="recipes-overlay">
+                <a href="#" class="expand">
+                  <div class="center">
+                    <%= recipe.title %></a>
+                  </div>
+                <a class="close-recipes-overlay hidden"></a>
+              </div>
+            </div>
+            <% end %>
+          </div>
+        </div>
+      </div>  
+    <% end %>
+  </div>
+</div>
