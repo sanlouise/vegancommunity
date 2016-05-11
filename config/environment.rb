@@ -1,8 +1,12 @@
 # Load the Rails application.
 require File.expand_path('../application', __FILE__)
+# Load the Rails application.
+require File.expand_path('../application', __FILE__)
 
 # Initialize the Rails application.
 Rails.application.initialize!
+
+require 'carrierwave/orm/activerecord'
 
 ActionMailer::Base.smtp_settings = {
   :address => 'smtp.sendgrid.net',
@@ -14,7 +18,3 @@ ActionMailer::Base.smtp_settings = {
   :enable_startstls_auto => true
 }
 
-# Load the Rails application.
-require File.expand_path('../application', __FILE__)
-
-require 'carrierwave/orm/activerecord'
