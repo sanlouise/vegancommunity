@@ -25,7 +25,7 @@
         </ul>
         
         <ul class="side-nav" id="mobile-demo">
-          <li><%= link_to "Browse Recipes", "/recipes" %></li>
+          <li><%= link_to "Recipes", mealtype_path %></li>
           <li><%= link_to "Cosmetics", "/cosmetics" %></li>
           <% if !user_signed_in? %>
             <li><%= link_to "Log In", new_user_session_path %> </li>

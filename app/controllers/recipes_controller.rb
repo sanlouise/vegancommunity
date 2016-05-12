@@ -2,6 +2,7 @@ class RecipesController < ApplicationController
   include RecipesHelper
   
   before_action :set_recipe, only: [:edit, :update, :show]
+  before_action :require_user, except: [:show, :index]
   
   def index
     @recipes = Recipe.paginate(page: params[:page], per_page: 12)

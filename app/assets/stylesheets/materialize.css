@@ -2973,8 +2973,8 @@ ul.staggered-list li {
 }
 
 footer.page-footer {
-  margin-top: 10px;
-  padding-top: 10px;
+  margin-top: 5px;
+  padding-top: 5px;
   background-color: #ee6e73;
 }
 
@@ -5245,7 +5245,7 @@ a.waves-effect .waves-ripple {
   border-radius: 0 0 2px 2px;
   background-color: #fafafa;
   padding: 4px 6px;
-  height: 56px;
+  height: 40px;
   width: 100%;
 }
 
