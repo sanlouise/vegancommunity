@@ -4,12 +4,13 @@
 .effects .img {
   position: relative;
   float: left;
-  margin-bottom: 5px;
-  width: 25%;
+  margin-bottom: 0px;
+  width: 300px;
+  height: 300px;
   overflow: hidden;
 }
 .effects .img:nth-child(n) {
-  margin-right: 5px;
+  margin-right: 0px;
 }
 .effects .img:first-child {
   margin-left: 0px;
@@ -100,6 +101,7 @@ a.expand {
   background: #009688;
   overflow: hidden;
   transition: all 0.5s;
+  opacity: 0.7;
 }
 
 
@@ -116,7 +118,7 @@ a.expand {
   margin: auto auto;
 }
 #effect-1 .img.hover .recipes-overlay {
-  height: 50%;
+  height: 100%;
 }
 
 /* ------------------------------------------------------------ *\
@@ -126,19 +128,19 @@ a.expand {
 \* ------------------------------------------------------------ */
 @media only screen and (max-width: 1100px) {
   .effects {
-    padding-left: 5px;
+    padding-left: 0px;
   }
   .effects .img {
     width: 100%;
   }
   .effects .img:nth-child(n) {
-    margin-right: 5px;
+    margin-right: 0px;
   }
   .effects .img:first-child {
     margin-left: 0;
   }
   .effects .img:nth-child(2n-1) {
-    margin-left: -5px;
+    margin-left: 0px;
   }
   .effects .img:nth-child(2n) {
     margin-right: 0;
