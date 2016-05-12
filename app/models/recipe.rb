@@ -10,13 +10,13 @@ class Recipe < ActiveRecord::Base
   has_many :comments
   mount_uploader :image, ImageUploader
   
+  validates :user_id, presence: true, numericality: {only_integer: true}
+  validates :meal_id, presence: true, numericality: { only_integer: true }
+  validates :title, presence: true, length: { in: 4..60 }
+  validates :description, presence: true, length: { in: 50..1000 }
+  validates :directions, presence: true, length: { in: 20..5000 }
   validate :image_size
   validates :image, presence: true
-  validates :user_id, presence: true
-  validates :title, presence: true, length: {minimum: 4, maximum: 60}
-  validates :description, presence: true, length: {minimum: 50, maximum: 1000}
-  validates :directions, presence: true, length: {minimum: 20, maximum: 5000}
-  validates :ingredients, presence: true
   
   private
   def image_size

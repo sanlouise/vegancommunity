@@ -24,7 +24,7 @@
               <div class="img">
                 
                 <%= link_to recipe_path(recipe) do %>
-                <%= image_tag(recipe.image.url, size: "350x350") %>
+                <%= image_tag(recipe.image.url, class: "recipe-listing-image") %>
                   <div class="recipes-overlay">
                     <a href="#" class="expand">
                       <div class="center">
@@ -35,6 +35,7 @@
                 </div>
               <% end %>
             </div>
+
           </div>
         </div>  
       <% end %>
