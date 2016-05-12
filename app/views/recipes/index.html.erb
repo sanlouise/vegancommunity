@@ -1,16 +1,8 @@
 <p id="notice"><%= notice %></p>
 <div class="white-background">
   <h1>Recipes</h1>
-  
-  <div class="row">
-      <div class="col s12">
-        <ul class="tabs">
-          <li class="tab col s3"><%= link_to "All Recipes", recipes_path %></li>
-          <li class="tab col s3"><%= link_to "Breakfast", breakfast_path %></li>
-          <li class="tab col s3"><%= link_to "Lunch", lunch_path %></li>
-          <li class="tab col s3"><%= link_to "Dinner", dinner_path %></li>
-        </ul>
-    </div>
+  <div class="back-button">
+    <%= link_to "Back", mealtype_path, class: "back-button" %>
   </div>
   
   <%= link_to "New Recipe", "new_recipe_path", class: "waves-effect waves-light btn" %>
