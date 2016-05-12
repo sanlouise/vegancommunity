@@ -5,9 +5,14 @@ Rails.application.routes.draw do
   
   resources :contacts
   resources :recipes
+  resources :cosmetics
   
   get '/about', to: 'pages#about' 
   get '/blog', to: 'pages#blog'
+  
+  get '/makeup', to: 'cosmetics#makeup' 
+  get '/skin-body', to: 'cosmetics#skin_body' 
+  get '/hair', to: 'cosmetics#hair' 
   
   get '/breakfast', to: 'meals#breakfast'
   get '/lunch', to: 'meals#lunch'

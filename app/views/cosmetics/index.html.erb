@@ -1,0 +1,37 @@
+<div class ="meals-bg"></div>
+
+<div class="white-background">
+  <h1 id="meals-title">Cosmetics</h1>
+  
+  <div class="row">
+    <div class="col s12 m8 offset-m2 center">
+      
+      <div class="lineup">
+          <div class="col-m3">
+            <div id="effect-1" class="effects clearfix">
+              <div class="img">
+                
+                <%= link_to recipe_path(recipe) do %>
+                <%= image_tag(makeup-lips.jpg, class: "recipe-listing-image") %>
+                  <div class="recipes-overlay">
+                    <a href="#" class="expand">
+                      <div class="center">
+                        Makeup</a>
+                      </div>
+                    <a class="close-recipes-overlay hidden"></a>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+
+          </div>
+        </div>  
+      
+      <p id="meal-p">Search By Type</p>
+      <%= link_to "Makeup", breakfast_path, class: "waves-effect waves-light btn" %>
+      <%= link_to "Skin and Body", lunch_path, class: "waves-effect waves-light btn" %>
+      <%= link_to "Hair", dinner_path, class: "waves-effect waves-light btn" %>
+
+    </div>
+  </div>
+</div>
