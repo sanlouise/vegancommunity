@@ -1,5 +1,5 @@
 .meals-bg {
-  background-image: url(bg-field-home.jpg);
+  background-image: url(meals/food_bg.jpeg);
   /* Set rules to fill background */
   min-height: 100%;
   min-width: 1024px;
@@ -30,12 +30,12 @@
 
 #meals-title {
   font-family: Pacifico;
-  margin-top: 30px;
-  font-size: 130px;
+  margin-top: 20px;
+  font-size: 90px;
   color: white !important;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important;
   margin-top: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .white-background {
