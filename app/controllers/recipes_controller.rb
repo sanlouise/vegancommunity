@@ -1,4 +1,6 @@
 class RecipesController < ApplicationController
+  include RecipesHelper
+  
   before_action :set_recipe, only: [:edit, :update, :show]
   
   def index
@@ -26,9 +28,13 @@ class RecipesController < ApplicationController
   def create
     @recipe = Recipe.new(recipe_params)
     @recipe.user_id = session["warden.user.user.key"][1][0]
-
+  
     respond_to do |format|
       if @recipe.save
+        create_recipe_meal_associations
+        
+        create_recipe_ingredient_associations
+        
         format.html { redirect_to @recipe, notice: 'Recipe was successfully created.' }
         format.json { render :show, status: :created, location: @recipe }
       else
@@ -70,6 +76,6 @@ class RecipesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def recipe_params
-      params.require(:recipe).permit(:title, :description, :directions, :image, :meal_type, ingredient_ids: [])
+      params.require(:recipe).permit(:title, :description, :directions, :image, ingredient_ids: [])
     end
 end
