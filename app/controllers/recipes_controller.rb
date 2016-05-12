@@ -74,6 +74,10 @@ class RecipesController < ApplicationController
     def set_recipe
       @recipe = Recipe.find(params[:id])
     end
+    
+    def admin_user
+      redirect_to recipes_path unless current_user.admin?
+    end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def recipe_params
