@@ -5,3 +5,15 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+sandra = User.create(email: "sandra.adamshallie@gmail.com", password: "What if I do this?", 
+first_name: "Sandra", last_name: "Hallie")
+
+Meal.create(name: "Breakfast")
+Meal.create(name: "Lunch")
+Meal.create(name: "Dinner")
+
+20.times do 
+  Recipe.create(user_id: sandra.id, title: Faker::Book.title, description: Faker::Lorem.paragraph, 
+  directions: Faker::Lorem.paragraph, image: Faker::Avatar.image, meal_id: rand(1..3))
+end

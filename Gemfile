@@ -26,7 +26,6 @@ gem 'bcrypt', '3.1.7'
 gem 'fog', '1.36.0'
 # Use Unicorn as the app server
 # gem 'unicorn'
-
 gem 'will_paginate'
 
 # Use Capistrano for deployment
@@ -41,6 +40,7 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'faker'
 end
 
 group :production do
