@@ -11,23 +11,28 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="input-field">
     <%= f.label :title %><br>
     <%= f.text_field :title %>
   </div>
-  <div class="field">
+  
+  <div class="input-field">
     <%= f.label :body %><br>
-    <%= f.text_field :body %>
+    <%= f.text_area :body, class: "materialize-textarea" %>
   </div>
-  <div class="field">
+  
+  <div class="input-field">
     <%= f.label :slideshow %><br>
     <%= f.text_field :slideshow %>
   </div>
-  <div class="field">
+  
+  <div class="input-field">
     <%= f.label :lifestyle_tag %><br>
     <%= f.text_field :lifestyle_tag %>
   </div>
+  
   <div class="actions">
     <%= f.submit %>
   </div>
+  
 <% end %>
