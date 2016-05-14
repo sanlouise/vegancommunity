@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @lifestyle_post.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @lifestyle_post.body %>
+</p>
+
+<p>
+  <strong>Slideshow:</strong>
+  <%= @lifestyle_post.slideshow %>
+</p>
+
+<p>
+  <strong>Lifestyle tag:</strong>
+  <%= @lifestyle_post.lifestyle_tag %>
+</p>
+
+<%= link_to 'Edit', edit_lifestyle_post_path(@lifestyle_post) %> |
+<%= link_to 'Back', lifestyle_posts_path %>

@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Lifestyle Posts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th>Slideshow</th>
+      <th>Lifestyle tag</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lifestyle_posts.each do |lifestyle_post| %>
+      <tr>
+        <td><%= lifestyle_post.title %></td>
+        <td><%= lifestyle_post.body %></td>
+        <td><%= lifestyle_post.slideshow %></td>
+        <td><%= lifestyle_post.lifestyle_tag %></td>
+        <td><%= link_to 'Show', lifestyle_post %></td>
+        <td><%= link_to 'Edit', edit_lifestyle_post_path(lifestyle_post) %></td>
+        <td><%= link_to 'Destroy', lifestyle_post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lifestyle post', new_lifestyle_post_path %>

@@ -1,0 +1,33 @@
+<%= form_for(@lifestyle_post) do |f| %>
+  <% if @lifestyle_post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@lifestyle_post.errors.count, "error") %> prohibited this lifestyle_post from being saved:</h2>
+
+      <ul>
+      <% @lifestyle_post.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :body %><br>
+    <%= f.text_field :body %>
+  </div>
+  <div class="field">
+    <%= f.label :slideshow %><br>
+    <%= f.text_field :slideshow %>
+  </div>
+  <div class="field">
+    <%= f.label :lifestyle_tag %><br>
+    <%= f.text_field :lifestyle_tag %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
