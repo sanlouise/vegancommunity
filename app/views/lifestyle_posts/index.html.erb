@@ -1,33 +1,49 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="section">
+    <!--   Icon Section   -->
+    <div class="row">
+      <div class="col s12">
+        <div class="icon-block">
 
-<h1>Listing Lifestyle Posts</h1>
+          <!--Header portfolio-->
+          <h2 class="center brown-text">Conscioux</h2>
+          <h5 class="center"></h5>
+          <p class="light center">Best resources </p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
-      <th>Slideshow</th>
-      <th>Lifestyle tag</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+          <!--Iterate through Projects-->
+          <% @lifestyle_posts.each do |post| %>
+            <hr/>
+            <div class="row">
+              <div class="col s12">
+                <div class="col s12 l7">
+                  <!--Project Title-->
+                  <h3 class="center"><%= post.title %></h3>
+                  <!--Project Description-->
+                  <p><%= post.description %></p>
+                  <!--Project Points-->
+                  <ul class="portfolio">
+                    <%= post.image %>
+                  </ul>
+                  <!--GitHub link-->
+              
+                </div>
+                
+                <!--Project Image-->
+                <div class="col s12 l5">
+                  <%= link_to post_path(@post) do %>
+                    <%= image_tag(post.image2, class: "responsive-img z-depth-2 center") %>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          <% end %>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <tbody>
-    <% @lifestyle_posts.each do |lifestyle_post| %>
-      <tr>
-        <td><%= lifestyle_post.title %></td>
-        <td><%= lifestyle_post.body %></td>
-        <td><%= lifestyle_post.slideshow %></td>
-        <td><%= lifestyle_post.lifestyle_tag %></td>
-        <td><%= link_to 'Show', lifestyle_post %></td>
-        <td><%= link_to 'Edit', edit_lifestyle_post_path(lifestyle_post) %></td>
-        <td><%= link_to 'Destroy', lifestyle_post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
-<br>
 
 <%= link_to 'New Lifestyle post', new_lifestyle_post_path %>

@@ -21,9 +21,44 @@
     <%= f.text_area :body, class: "materialize-textarea" %>
   </div>
   
-  <div class="input-field">
-    <%= f.label :slideshow %><br>
-    <%= f.text_field :slideshow %>
+  <div class="file-field input-field">
+    <div class="btn">
+      <span>Image</span>
+      <%= f.file_field :image, accept: 'image/jpeg,image/gif,image/png' %>
+    </div>
+    <div class="file-path-wrapper">
+      <input class="file-path validate" type="text" placeholder="Upload an image">
+    </div>
+  </div>
+  
+  <div class="file-field input-field">
+    <div class="btn">
+      <span>Image</span>
+      <%= f.file_field :image2, accept: 'image/jpeg,image/gif,image/png' %>
+    </div>
+    <div class="file-path-wrapper">
+      <input class="file-path validate" type="text" placeholder="Upload an image">
+    </div>
+  </div>
+  
+  <div class="file-field input-field">
+    <div class="btn">
+      <span>Image</span>
+      <%= f.file_field :image3, accept: 'image/jpeg,image/gif,image/png' %>
+    </div>
+    <div class="file-path-wrapper">
+      <input class="file-path validate" type="text" placeholder="Upload an image">
+    </div>
+  </div>
+  
+  <div class="file-field input-field">
+    <div class="btn">
+      <span>Image</span>
+      <%= f.file_field :image4, accept: 'image/jpeg,image/gif,image/png' %>
+    </div>
+    <div class="file-path-wrapper">
+      <input class="file-path validate" type="text" placeholder="Upload an image">
+    </div>
   </div>
   
   <div class="input-field">
@@ -31,8 +66,17 @@
     <%= f.text_field :lifestyle_tag %>
   </div>
   
-  <div class="actions">
-    <%= f.submit %>
+  <div class="actions center">
+    <%= f.submit class: "btn waves-effect waves-light" %>
   </div>
   
 <% end %>
+
+<script type="text/javascript">
+  $('#recipe_picture').bind('change', function() {
+    size_in_megabytes = this.files[0].size/1024 /1024;
+    if (size_in_megabytes > 5) {
+      alert('Maximum file size is 1MB. Please choose a smaller file.')
+    }
+  });
+</script>

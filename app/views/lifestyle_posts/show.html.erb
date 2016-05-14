@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <p>
   <strong>Title:</strong>
   <%= @lifestyle_post.title %>
@@ -11,13 +9,13 @@
 </p>
 
 <p>
-  <strong>Slideshow:</strong>
-  <%= @lifestyle_post.slideshow %>
+  <strong>Lifestyle tag:</strong>
+  <%= @lifestyle_post.lifestyle_tag %>
 </p>
 
 <p>
-  <strong>Lifestyle tag:</strong>
-  <%= @lifestyle_post.lifestyle_tag %>
+  <strong>Image:</strong>
+  <%= @lifestyle_post.image %>
 </p>
 
 <%= link_to 'Edit', edit_lifestyle_post_path(@lifestyle_post) %> |

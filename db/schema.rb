@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160514190403) do
+ActiveRecord::Schema.define(version: 20160514192801) do
 
   create_table "comments", force: :cascade do |t|
     t.integer  "recipe_id",  null: false
@@ -40,11 +40,13 @@ ActiveRecord::Schema.define(version: 20160514190403) do
   create_table "lifestyle_posts", force: :cascade do |t|
     t.string   "title"
     t.string   "body"
-    t.string   "slideshow"
     t.string   "lifestyle_tag"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
     t.string   "image"
+    t.string   "image2"
+    t.string   "image3"
+    t.string   "image4"
   end
 
   create_table "meals", force: :cascade do |t|

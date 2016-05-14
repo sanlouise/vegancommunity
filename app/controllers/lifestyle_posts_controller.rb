@@ -69,6 +69,6 @@ class LifestylePostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def lifestyle_post_params
-      params.require(:lifestyle_post).permit(:title, :body, :slideshow, :lifestyle_tag)
+      params.require(:lifestyle_post).permit(:title, :body, :lifestyle_tag, :image, :image2, :image3, :image4)
     end
 end
