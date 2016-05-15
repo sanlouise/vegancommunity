@@ -8,6 +8,7 @@ class Recipe < ActiveRecord::Base
   has_many :ingredients, through: :recipe_ingredients
   has_many :recipe_ingredients
   has_many :comments
+  has_many :images, as: :imageable
   mount_uploader :image, ImageUploader
   
   validates :user_id, presence: true, numericality: {only_integer: true}
