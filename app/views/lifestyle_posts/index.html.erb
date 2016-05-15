@@ -19,19 +19,15 @@
                   <!--Project Title-->
                   <h3 class="center"><%= post.title %></h3>
                   <!--Project Description-->
-                  <p><%= post.description %></p>
-                  <!--Project Points-->
-                  <ul class="portfolio">
-                    <%= post.image %>
-                  </ul>
+                  <p><%= post.body %></p>
                   <!--GitHub link-->
               
                 </div>
                 
                 <!--Project Image-->
                 <div class="col s12 l5">
-                  <%= link_to post_path(@post) do %>
-                    <%= image_tag(post.image2, class: "responsive-img z-depth-2 center") %>
+                  <%= link_to lifestyle_post_path(post) do %>
+                    <%= image_tag(post.image, class: "responsive-img z-depth-2 center") %>
                   <% end %>
                 </div>
               </div>

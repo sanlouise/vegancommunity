@@ -7,7 +7,7 @@ p, a, nav, li {
 }
 
 .home-bg {
-  background-image: url(bg-field-home.jpg);
+  background-image: none;
   /* Set rules to fill background */
   min-height: 100%;
   min-width: 1024px;
@@ -31,11 +31,19 @@ p, a, nav, li {
 .header.center.text-lighten-2.home {
   font-family: Pacifico;
   margin-bottom: 30px;
-  font-size: 130px;
+  font-size: 70px;
   color: white !important;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important;
-  margin-top: 140px;
+  margin-top: 25px;
 }
+
+.brandnav {
+  font-family: Pacifico;
+  font-size: 40px;
+  color: white !important;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important;
+}
+
 
 @media only screen and (max-width:800px){
   .header.center.text-lighten-2.home{
@@ -49,6 +57,14 @@ p, a, nav, li {
   }
 }
 
+
+.homepage-image{
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+
 .header.col.s12.light{
   font-family: Pacifico;
   font-size: 50px;
@@ -56,10 +72,6 @@ p, a, nav, li {
   margin-bottom: 50px;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important;
-}
-
-.brand-logo.center {
-  margin-top: 7px;
 }
 
 .footer-copyright {

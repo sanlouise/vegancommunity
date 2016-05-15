@@ -1,13 +1,19 @@
 <div class ="home-bg"></div>
 <container>
-  <h1 class="header center text-lighten-2 home">Conscioux</h1>
-  <div class="row center">
-    <h5 class="header col s12 light">Healthy your way.</h5>
+  <!--<h1 class="header center text-lighten-2 home">Conscioux</h1>-->
+  <!--<div class="row center">-->
+  <!--  <h5 class="header col s12 light">Healthy your way.</h5>-->
+  <!--</div>-->
+  <div class="row">
+    <div class="col s12 center">
+      <%= image_tag("resized-villa.jpeg", class: "homepage-image") %>
+    </div>
   </div>
-  
   <div class="row">
     <div class="col s12 m6 offset-m3 center">
       <div class="center home">
+        <h3>Quote of the week</h3>
+        <p>Amazing quote</p>
         <%= link_to "Browse Recipes", mealtype_path, class: "waves-effect waves-light btn-large" %>
         <a class="waves-effect waves-light btn-large">Browse Cosmetics</a>
      </div>
