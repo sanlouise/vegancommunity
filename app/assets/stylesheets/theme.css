@@ -5,9 +5,10 @@
   position: relative;
   float: left;
   margin-bottom: 0px;
-  width: 275px;
-  height: 275px;
+  width: 200px;
+  height: 200px;
   overflow: hidden;
+  display: inline-block;
 }
 .effects .img:nth-child(n) {
   margin-right: 0px;

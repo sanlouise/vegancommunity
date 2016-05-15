@@ -15,7 +15,8 @@
 
 <p>
   <strong>Image:</strong>
-  <%= @lifestyle_post.image %>
+  
+    <%= image_tag(@lifestyle_post.image.url, size: "400x400") %>
 </p>
 
 <%= link_to 'Edit', edit_lifestyle_post_path(@lifestyle_post) %> |

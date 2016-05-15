@@ -1,22 +1,95 @@
 <div class ="home-bg"></div>
+
+
 <container>
-  <!--<h1 class="header center text-lighten-2 home">Conscioux</h1>-->
-  <!--<div class="row center">-->
-  <!--  <h5 class="header col s12 light">Healthy your way.</h5>-->
-  <!--</div>-->
+
   <div class="row">
     <div class="col s12 center">
       <%= image_tag("resized-villa.jpeg", class: "homepage-image") %>
     </div>
   </div>
+  
   <div class="row">
     <div class="col s12 m6 offset-m3 center">
       <div class="center home">
+        <hr />
         <h3>Quote of the week</h3>
-        <p>Amazing quote</p>
-        <%= link_to "Browse Recipes", mealtype_path, class: "waves-effect waves-light btn-large" %>
-        <a class="waves-effect waves-light btn-large">Browse Cosmetics</a>
-     </div>
+        <p>"Never doubt that a small group of thoughtful, committed citizens can change the world; 
+        indeed, it's the only thing that ever has."</br> - Margaret Mead</p>
+        <hr />
+      </div>
     </div>
   </div>
+  
+  <div class="row">
+    <div class="col s12 m4">
+      <div class="lineup">
+          <div id="effect-1" class="effects clearfix">
+            <div class="img">
+              <%= link_to makeup_path do %>
+              <%= image_tag 'cosmetics/makeup-lips.jpg', class: "cosmetics-listing-image" %>
+                <div class="recipes-overlay">
+                  <a href="/makeup" class="expand">
+                    <div class="center">
+                      Makeup</a>
+                    </div>
+                  <a class="close-recipes-overlay hidden"></a>
+                </div>
+              </div>
+          </div>
+         <% end %>
+        </div>  
+    </div>
+    <div class="col s12 m4">
+      <div class="lineup">
+          <div id="effect-1" class="effects clearfix">
+            <div class="img">
+              <%= link_to '/skin-body' do %>
+              <%= image_tag 'cosmetics/skin-care.jpg', class: "recipe-listing-image" %>
+                <div class="recipes-overlay">
+                  <a href="/skin-body" class="expand">
+                    <div class="center">
+                      Skin and Body</a>
+                    </div>
+                  <a class="close-recipes-overlay hidden"></a>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        </div>  
+    </div>
+    
+    <div class="col s12 m4">
+      <div class="lineup">
+          <div id="effect-1" class="effects clearfix">
+            <div class="img">
+              <%= link_to '/hair' do %>
+              <%= image_tag 'cosmetics/hair.png', class: "recipe-listing-image" %>
+                <div class="recipes-overlay">
+                  <a href="/hair" class="expand">
+                    <div class="center">
+                      Hair Care</a>
+                    </div>
+                  <a class="close-recipes-overlay hidden"></a>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        </div>  
+    </div>
+
+  <div class="row">
+    <div class="col s12 m12 center">
+      <div class="center home">
+        <hr />
+        <h3>Our Mission</h3>
+        <p>"Never doubt that a small group of thoughtful, committed citizens can change the world; 
+        indeed, it's the only thing that ever has."</br> - Margaret Mead</p>
+        
+        <hr />
+        
+      </div>
+    </div>
+  </div>
+
 </container>
